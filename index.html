@@ -22,18 +22,20 @@
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
-  <body>
+  <body onload="windowLoad()">
     <header>
       <nav>
-        <img src="./assets/img/2.png" alt="Logo Haras d'Azur" />
+        <a href="./index.html"
+          ><img src="./assets/img/2.png" alt="Logo Haras d'Azur"
+        /></a>
         <div class="menu-icons">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-bars" id="open-icon" onclick="openNav()"></i>
+          <i class="fa-solid fa-xmark" id="close-icon" onclick="closeNav()"></i>
         </div>
-        <div class="navLi">
-          <ul>
-            <li>Accueil</li>
-            <li>
+        <div class="menuNav">
+          <ul class="NavListLi">
+            <li class="liNav">Accueil</li>
+            <li class="liNav">
               Notre haras
               <ul>
                 <li>
@@ -52,9 +54,9 @@
                 <li>Chevaux à la vente</li>
               </ul>
             </li>
-            <li>Actualités</li>
-            <li>Galerie</li>
-            <li>Nous contacter</li>
+            <li class="liNav">Actualités</li>
+            <li class="liNav">Galerie</li>
+            <li class="liNav">Nous contacter</li>
           </ul>
         </div>
       </nav>
