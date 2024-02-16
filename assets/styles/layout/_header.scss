@@ -14,9 +14,10 @@ header {
 
     a {
       img {
-        width: 40%;
+        width: 70%;
         margin: 0 auto;
         transition: 0.2s;
+        filter: drop-shadow(1px 1px 1px $blackShadow);
 
         @media screen and (max-width: 770px) {
           width: 40%;
@@ -25,7 +26,6 @@ header {
 
         &:hover {
           transform: scale(1.2);
-          filter: drop-shadow(1px 1px 1px $color1);
         }
       }
     }
@@ -34,7 +34,6 @@ header {
       display: none;
       text-align: right;
       color: $color2;
-      font-size: 1.5rem;
 
       @media screen and (max-width: 770px) {
         display: block;
@@ -42,7 +41,9 @@ header {
         top: 85px;
         right: 0px;
       }
-
+      i {
+        font-size: 1.5rem;
+      }
       #open-icon {
         display: none;
         @media screen and (max-width: 770px) {
@@ -55,11 +56,11 @@ header {
       }
 
       &:hover {
-        text-shadow: 1px 1px 1px $color1;
+        text-shadow: 1px 1px 1px $blackShadow;
       }
     }
     .menuNav {
-      ul {
+      .NavListLi {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -72,17 +73,16 @@ header {
           align-items: stretch;
         }
 
-        li {
+        .liNav {
           list-style: none;
           padding: 5px 10px;
-          border-radius: 5px;
           text-align: center;
           transition: 0.2s;
+          cursor: pointer;
 
           @media screen and (max-width: 770px) {
             padding: 10px 0;
-            border-bottom: 1px solid $color1;
-            border-top: 1px solid $color1;
+            border-bottom: 1px solid $grey1;
             border-radius: 0;
           }
 
@@ -94,18 +94,80 @@ header {
 
           &:hover {
             transform: scale(1.2);
-            text-shadow: 1px 1px 1px $color1;
-            border: 1px solid $color2;
-            box-shadow: 1px 1px 1px $color1;
 
             @media screen and (max-width: 770px) {
               transform: none;
               box-shadow: none;
-              background: $color1;
+              background: $color2;
+              color: $white1;
 
               a {
-                color: $color1;
-                text-shadow: 1px 1px 1px $color1;
+                color: $white1;
+              }
+            }
+          }
+        }
+        #menuHaras {
+          .menuHarasNav {
+            display: none;
+          }
+          &:hover {
+            display: block;
+            position: relative;
+            .menuHarasNav {
+              display: block;
+              position: absolute;
+              ul {
+                display: block;
+                width: 150px;
+                text-align: left;
+                background: $white1;
+
+                li {
+                  list-style: none;
+                  padding: 10px;
+                  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+                  font-size: 0.8rem;
+
+                  &:hover {
+                    color: $white1;
+                    background: $color2;
+                    transform: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        #menuServices {
+          .menuServicesNav {
+            display: none;
+          }
+          &:hover {
+            display: block;
+            position: relative;
+            .menuServicesNav {
+              display: block;
+              position: absolute;
+              ul {
+                display: block;
+                width: 250px;
+                text-align: left;
+                background: $white1;
+
+                li {
+                  list-style: none;
+                  padding: 10px;
+                  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+                  font-size: 0.8rem;
+
+                  &:hover {
+                    color: $white1;
+                    background: $color2;
+                    transform: none;
+                  }
+                }
               }
             }
           }

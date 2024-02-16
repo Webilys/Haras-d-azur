@@ -1,3 +1,46 @@
+@font-face {
+  font-family: "garet-book";
+  src: url(../fonts/Garet-Book.ttf);
+}
+@font-face {
+  font-family: "garet-heavy";
+  src: url(../fonts/Garet-Heavy.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: garet-book, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #1a3c61;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
 header nav {
   width: 85%;
   margin: 0 auto;
@@ -15,10 +58,12 @@ header nav {
   }
 }
 header nav a img {
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 770px) {
   header nav a img {
@@ -29,14 +74,11 @@ header nav a img {
 header nav a img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-filter: drop-shadow(1px 1px 1px #ea412c);
-          filter: drop-shadow(1px 1px 1px #ea412c);
 }
 header nav .menu-icons {
   display: none;
   text-align: right;
   color: #1a3c61;
-  font-size: 1.5rem;
 }
 @media screen and (max-width: 770px) {
   header nav .menu-icons {
@@ -45,6 +87,9 @@ header nav .menu-icons {
     top: 85px;
     right: 0px;
   }
+}
+header nav .menu-icons i {
+  font-size: 1.5rem;
 }
 header nav .menu-icons #open-icon {
   display: none;
@@ -58,9 +103,9 @@ header nav .menu-icons #close-icon {
   display: none;
 }
 header nav .menu-icons:hover {
-  text-shadow: 1px 1px 1px #ea412c;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
-header nav .menuNav ul {
+header nav .menuNav .NavListLi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +117,7 @@ header nav .menuNav ul {
   width: 100%;
 }
 @media screen and (max-width: 770px) {
-  header nav .menuNav ul {
+  header nav .menuNav .NavListLi {
     display: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,45 +131,169 @@ header nav .menuNav ul {
             align-items: stretch;
   }
 }
-header nav .menuNav ul li {
+header nav .menuNav .NavListLi .liNav {
   list-style: none;
   padding: 5px 10px;
-  border-radius: 5px;
   text-align: center;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 @media screen and (max-width: 770px) {
-  header nav .menuNav ul li {
+  header nav .menuNav .NavListLi .liNav {
     padding: 10px 0;
-    border-bottom: 1px solid #ea412c;
-    border-top: 1px solid #ea412c;
+    border-bottom: 1px solid #f1f1f1;
     border-radius: 0;
   }
 }
-header nav .menuNav ul li a {
+header nav .menuNav .NavListLi .liNav a {
   color: #1a3c61;
   width: 100%;
   height: 100%;
 }
-header nav .menuNav ul li:hover {
+header nav .menuNav .NavListLi .liNav:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  text-shadow: 1px 1px 1px #ea412c;
-  border: 1px solid #1a3c61;
-  -webkit-box-shadow: 1px 1px 1px #ea412c;
-          box-shadow: 1px 1px 1px #ea412c;
 }
 @media screen and (max-width: 770px) {
-  header nav .menuNav ul li:hover {
+  header nav .menuNav .NavListLi .liNav:hover {
     -webkit-transform: none;
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #ea412c;
+    background: #1a3c61;
+    color: #fff;
   }
-  header nav .menuNav ul li:hover a {
-    color: #ea412c;
-    text-shadow: 1px 1px 1px #ea412c;
+  header nav .menuNav .NavListLi .liNav:hover a {
+    color: #fff;
   }
+}
+header nav .menuNav .NavListLi #menuHaras .menuHarasNav {
+  display: none;
+}
+header nav .menuNav .NavListLi #menuHaras:hover {
+  display: block;
+  position: relative;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav {
+  display: block;
+  position: absolute;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul {
+  display: block;
+  width: 150px;
+  text-align: left;
+  background: #fff;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+  font-size: 0.8rem;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:hover {
+  color: #fff;
+  background: #1a3c61;
+  -webkit-transform: none;
+          transform: none;
+}
+header nav .menuNav .NavListLi #menuServices .menuServicesNav {
+  display: none;
+}
+header nav .menuNav .NavListLi #menuServices:hover {
+  display: block;
+  position: relative;
+}
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav {
+  display: block;
+  position: absolute;
+}
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
+  display: block;
+  width: 250px;
+  text-align: left;
+  background: #fff;
+}
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+  font-size: 0.8rem;
+}
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li:hover {
+  color: #fff;
+  background: #1a3c61;
+  -webkit-transform: none;
+          transform: none;
+}
+
+footer .footer-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 20px 0;
+}
+footer .footer-container img {
+  width: 40%;
+  text-align: left;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .footer-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer .footer-container h4 {
+  padding-bottom: 20px;
+}
+footer .footer-container #social {
+  text-align: center;
+}
+footer .footer-container #social i {
+  font-size: 1.5rem;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .footer-container #social i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .footer-container #link {
+  text-align: right;
+}
+footer .footer-container #link li {
+  list-style: none;
+  line-height: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .footer-container #link li a {
+  color: #333;
+}
+footer .footer-container #link li:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+footer #copyright {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+footer #copyright a {
+  font-size: 0.8rem;
+  color: #1a3c61;
+  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.accueil {
+  height: 80vh;
+  background: url(../img/bg.jpeg) center/cover;
 }/*# sourceMappingURL=index.css.map */

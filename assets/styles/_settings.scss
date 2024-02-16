@@ -1,2 +1,58 @@
+//fonts
+
+@font-face {
+  font-family: "garet-book";
+  src: url(../fonts/Garet-Book.ttf);
+}
+
+@font-face {
+  font-family: "garet-heavy";
+  src: url(../fonts/Garet-Heavy.ttf);
+}
+
+$font1: garet-book, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+$font2: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
 $color1: #ea412c;
 $color2: #1a3c61;
+$black1: #000;
+$white1: #fff;
+$text: #333;
+$grey1: #f1f1f1;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $font1;
+  font-size: 1rem;
+}
+
+body {
+  color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font2;
+  color: $color2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}

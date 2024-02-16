@@ -35,24 +35,28 @@
         <div class="menuNav">
           <ul class="NavListLi">
             <li class="liNav">Accueil</li>
-            <li class="liNav">
-              Notre haras
-              <ul>
-                <li>
-                  Nos services
-                  <ul>
-                    <li>Écurie de propriétaires</li>
-                    <li>Repos ou retraite de vos chevaux</li>
-                    <li>Enseignement CSO et CCE</li>
-                    <li>Débourrage/Dressage</li>
-                    <li>Centre d'insémination</li>
-                    <li>Élevage équin / Nos étalons</li>
-                  </ul>
-                </li>
-                <li>Les installations</li>
-                <li>L'équipe</li>
-                <li>Chevaux à la vente</li>
-              </ul>
+            <li class="liNav" id="menuHaras">
+              Notre haras <i class="fa-solid fa-caret-down"></i>
+              <div class="menuHarasNav">
+                <ul>
+                  <li>Les installations</li>
+                  <li>L'équipe</li>
+                  <li>Chevaux à la vente</li>
+                </ul>
+              </div>
+            </li>
+            <li class="liNav" id="menuServices">
+              Nos services <i class="fa-solid fa-caret-down"></i>
+              <div class="menuServicesNav">
+                <ul>
+                  <li>Écurie de propriétaires</li>
+                  <li>Repos ou retraite de vos chevaux</li>
+                  <li>Enseignement CSO et CCE</li>
+                  <li>Débourrage/Dressage</li>
+                  <li>Centre d'insémination</li>
+                  <li>Élevage équin / Nos étalons</li>
+                </ul>
+              </div>
             </li>
             <li class="liNav">Actualités</li>
             <li class="liNav">Galerie</li>
@@ -62,28 +66,40 @@
       </nav>
     </header>
 
+    <main>
+      <section class="accueil"></section>
+    </main>
+
     <footer>
-      <div>
-        <h4>Liens utiles</h4>
-        <ul>
-          <li>Partenaires</li>
-          <li>Mentions légales</li>
-          <li>Confidentialité</li>
-          <li>CGU</li>
-          <li>Cookies</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Suivez-nous</h4>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
+      <div class="footer-container">
+        <div>
+          <a href="./index.html"
+            ><img src="./assets/img/2.png" alt="Logo Haras d'Azur"
+          /></a>
+        </div>
+        <div id="social">
+          <h4>Suivez-nous</h4>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div id="link">
+          <h4>Liens utiles</h4>
+          <ul>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">CGU</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
         </div>
       </div>
 
-      <p>
-        ©2024 | Haras d'Azur | Made with ❤️ by Priscilla digiTech | Tous droits
-        réservés.
+      <p id="copyright">
+        ©2024 | <a href="./index.html">Haras d'Azur</a> | Made with ❤️ by
+        <a href="https://priscilladigitech.fr">Priscilla digiTech</a> | Tous
+        droits réservés.
       </p>
     </footer>
     <script src="./assets/js/index.js"></script>
