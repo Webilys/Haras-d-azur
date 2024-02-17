@@ -231,67 +231,46 @@ footer .footer-container {
   width: 85%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  grid-template-columns: 50% 40% 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
 }
-footer .footer-container img {
-  width: 40%;
-  text-align: left;
+footer .footer-container p {
+  font-size: 0.8rem;
+}
+footer .footer-container a {
+  color: #1a3c61;
+  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+}
+footer .footer-container li {
+  list-style: none;
+  line-height: 30px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-size: 0.8rem;
 }
-footer .footer-container img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+footer .footer-container li a {
+  color: #1a3c61;
+  font-size: 0.8rem;
 }
-footer .footer-container h4 {
-  padding-bottom: 20px;
+footer .footer-container li:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
-footer .footer-container #social {
-  text-align: center;
-}
-footer .footer-container #social i {
-  font-size: 1.5rem;
+footer .footer-container i {
   padding: 5px;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #1a3c61;
+  font-size: 1rem;
 }
-footer .footer-container #social i:hover {
+footer .footer-container i:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-footer .footer-container #link {
-  text-align: right;
-}
-footer .footer-container #link li {
-  list-style: none;
-  line-height: 30px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-footer .footer-container #link li a {
-  color: #1a3c61;
-}
-footer .footer-container #link li:hover {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-}
-footer #copyright {
-  width: 85%;
-  margin: 0 auto;
-  font-size: 0.8rem;
-  text-align: center;
-  padding-bottom: 20px;
-}
-footer #copyright a {
-  font-size: 0.8rem;
-  color: #1a3c61;
-  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .accueil {
