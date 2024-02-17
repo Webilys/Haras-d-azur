@@ -240,25 +240,14 @@ footer .footer-container {
 footer .footer-container p {
   font-size: 0.8rem;
 }
-footer .footer-container a {
+footer .footer-container p a {
   color: #1a3c61;
   font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 0.8rem;
 }
-footer .footer-container li {
-  list-style: none;
-  line-height: 30px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  font-size: 0.8rem;
-}
-footer .footer-container li a {
-  color: #1a3c61;
-  font-size: 0.8rem;
-}
-footer .footer-container li:hover {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+footer .footer-container p a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 footer .footer-container i {
   padding: 5px;

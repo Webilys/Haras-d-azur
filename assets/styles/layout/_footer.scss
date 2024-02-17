@@ -9,27 +9,14 @@ footer {
 
     p {
       font-size: 0.8rem;
-    }
-
-    a {
-      color: $color2;
-      font-family: $font2;
-      font-size: 0.8rem;
-    }
-
-    li {
-      list-style: none;
-      line-height: 30px;
-      transition: 0.2s;
-      font-size: 0.8rem;
-
       a {
         color: $color2;
+        font-family: $font2;
         font-size: 0.8rem;
-      }
 
-      &:hover {
-        transform: translateX(-10px);
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
 
