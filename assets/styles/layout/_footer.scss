@@ -28,6 +28,7 @@ footer {
         padding: 5px;
         cursor: pointer;
         transition: 0.2s;
+        color: $color2;
 
         &:hover {
           transform: scale(1.2);
@@ -44,7 +45,7 @@ footer {
         transition: 0.2s;
 
         a {
-          color: $text;
+          color: $color2;
         }
 
         &:hover {

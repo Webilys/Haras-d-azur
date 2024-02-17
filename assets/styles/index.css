@@ -259,6 +259,7 @@ footer .footer-container #social i {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  color: #1a3c61;
 }
 footer .footer-container #social i:hover {
   -webkit-transform: scale(1.2);
@@ -274,7 +275,7 @@ footer .footer-container #link li {
   transition: 0.2s;
 }
 footer .footer-container #link li a {
-  color: #333;
+  color: #1a3c61;
 }
 footer .footer-container #link li:hover {
   -webkit-transform: translateX(-10px);
@@ -295,5 +296,5 @@ footer #copyright a {
 
 .accueil {
   height: 80vh;
-  background: url(../img/bg.jpeg) center/cover;
+  background: url(../img/1.jpg) center/cover;
 }/*# sourceMappingURL=index.css.map */
