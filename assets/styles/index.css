@@ -29,7 +29,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #1a3c61;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -171,31 +170,57 @@ header nav .menuNav .NavListLi .liNav:hover {
 header nav .menuNav .NavListLi #menuHaras .menuHarasNav {
   display: none;
 }
-header nav .menuNav .NavListLi #menuHaras:hover {
-  display: block;
-  position: relative;
+@media screen and (max-width: 770px) {
+  header nav .menuNav .NavListLi #menuHaras .menuHarasNav {
+    display: block;
+  }
+  header nav .menuNav .NavListLi #menuHaras .menuHarasNav ul {
+    display: block;
+    position: inherit;
+    width: 100%;
+    text-align: center;
+  }
+  header nav .menuNav .NavListLi #menuHaras .menuHarasNav ul li {
+    background: #fff;
+    color: #1a3c61;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+    font-size: 0.8rem;
+  }
+  header nav .menuNav .NavListLi #menuHaras .menuHarasNav ul li:hover {
+    background: #1a3c61;
+    color: #fff;
+  }
 }
-header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav {
-  display: block;
-  position: absolute;
-}
-header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul {
-  display: block;
-  width: 150px;
-  text-align: left;
-  background: #fff;
-}
-header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li {
-  list-style: none;
-  padding: 10px;
-  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-  font-size: 0.8rem;
-}
-header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:hover {
-  color: #fff;
-  background: #1a3c61;
-  -webkit-transform: none;
-          transform: none;
+@media screen and (min-width: 770px) {
+  header nav .menuNav .NavListLi #menuHaras:hover {
+    display: block;
+    position: relative;
+  }
+  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav {
+    display: block;
+    position: absolute;
+  }
+  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul {
+    display: block;
+    width: 150px;
+    text-align: left;
+    background: #fff;
+    list-style: none;
+  }
+  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+    font-size: 0.8rem;
+  }
+  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:hover {
+    color: #fff;
+    background: #1a3c61;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 header nav .menuNav .NavListLi #menuServices .menuServicesNav {
   display: none;
@@ -264,5 +289,5 @@ footer .footer-container i:hover {
 
 .accueil {
   height: 80vh;
-  background: url(../img/1.jpg) center/cover;
+  background: url(../img/sujet.png) no-repeat left/contain;
 }/*# sourceMappingURL=index.css.map */
