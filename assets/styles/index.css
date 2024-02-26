@@ -45,20 +45,25 @@ header nav {
   margin: 0 auto;
   padding: 10px 0;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 @media screen and (max-width: 770px) {
   header nav {
-    grid-template-columns: 1fr;
     position: relative;
   }
 }
-header nav a img {
-  width: 70%;
+header nav a {
+  width: 20%;
   margin: 0 auto;
+}
+header nav a img {
+  width: 100%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
@@ -137,6 +142,7 @@ header nav .menuNav .NavListLi .liNav {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 770px) {
   header nav .menuNav .NavListLi .liNav {
@@ -167,89 +173,69 @@ header nav .menuNav .NavListLi .liNav:hover {
     color: #fff;
   }
 }
-header nav .menuNav .NavListLi #menuHaras .menuHarasNav {
-  display: none;
-}
-@media screen and (max-width: 770px) {
-  header nav .menuNav .NavListLi #menuHaras .menuHarasNav {
-    display: block;
-  }
-  header nav .menuNav .NavListLi #menuHaras .menuHarasNav ul {
-    display: block;
-    position: inherit;
-    width: 100%;
-    text-align: center;
-  }
-  header nav .menuNav .NavListLi #menuHaras .menuHarasNav ul li {
-    background: #fff;
-    color: #1a3c61;
-    list-style: none;
-    padding: 10px;
-    border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-    font-size: 0.8rem;
-  }
-  header nav .menuNav .NavListLi #menuHaras .menuHarasNav ul li:hover {
-    background: #1a3c61;
-    color: #fff;
-  }
-}
-@media screen and (min-width: 770px) {
-  header nav .menuNav .NavListLi #menuHaras:hover {
-    display: block;
-    position: relative;
-  }
-  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav {
-    display: block;
-    position: absolute;
-  }
-  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul {
-    display: block;
-    width: 150px;
-    text-align: left;
-    background: #fff;
-    list-style: none;
-  }
-  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li {
-    list-style: none;
-    padding: 10px;
-    border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-    font-size: 0.8rem;
-  }
-  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:hover {
-    color: #fff;
-    background: #1a3c61;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
+header nav .menuNav .NavListLi #menuHaras .menuHarasNav,
+header nav .menuNav .NavListLi #menuHaras .menuServicesNav,
+header nav .menuNav .NavListLi #menuServices .menuHarasNav,
 header nav .menuNav .NavListLi #menuServices .menuServicesNav {
   display: none;
 }
+header nav .menuNav .NavListLi #menuHaras:hover,
 header nav .menuNav .NavListLi #menuServices:hover {
   display: block;
   position: relative;
 }
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav {
   display: block;
   position: absolute;
 }
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
   display: block;
-  width: 250px;
+  width: 150px;
   text-align: left;
+  text-transform: none;
+  margin: 10px 0;
   background: #fff;
+  list-style: none;
 }
+@media screen and (max-width: 770px) {
+  header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul,
+  header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul,
+  header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul,
+  header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
+    width: 420px;
+    text-align: center;
+    color: #1a3c61;
+  }
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li {
   list-style: none;
   padding: 10px;
   border-bottom: 1px solid rgba(241, 241, 241, 0.8);
   font-size: 0.8rem;
 }
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:hover,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li:hover,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li:hover,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li:hover {
   color: #fff;
   background: #1a3c61;
   -webkit-transform: none;
           transform: none;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul {
+  width: 150px;
+}
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
+  width: 250px;
 }
 
 footer .footer-container {

@@ -4,18 +4,20 @@ header {
     margin: 0 auto;
     padding: 10px 0;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr;
+    justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 770px) {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
       position: relative;
     }
 
     a {
+      width: 20%;
+      margin: 0 auto;
       img {
-        width: 70%;
-        margin: 0 auto;
+        width: 100%;
         transition: 0.2s;
         filter: drop-shadow(1px 1px 1px $blackShadow);
 
@@ -41,11 +43,14 @@ header {
         top: 85px;
         right: 0px;
       }
+
       i {
         font-size: 1.5rem;
       }
+
       #open-icon {
         display: none;
+
         @media screen and (max-width: 770px) {
           display: block;
         }
@@ -79,7 +84,7 @@ header {
           text-align: center;
           transition: 0.2s;
           cursor: pointer;
-
+          text-transform: uppercase;
           @media screen and (max-width: 770px) {
             padding: 10px 0;
             border-bottom: 1px solid $grey1;
@@ -107,82 +112,36 @@ header {
             }
           }
         }
-        #menuHaras {
-          .menuHarasNav {
-            display: none;
 
-            @media screen and (max-width: 770px) {
-              display: block;
-              ul {
-                display: block;
-                position: inherit;
-                width: 100%;
-                text-align: center;
-
-                li {
-                  background: $white1;
-                  color: $color2;
-                  list-style: none;
-                  padding: 10px;
-                  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-                  font-size: 0.8rem;
-
-                  &:hover {
-                    background: $color2;
-                    color: $white1;
-                  }
-                }
-              }
-            }
-          }
-
-          @media screen and (min-width: 770px) {
-            &:hover {
-              display: block;
-              position: relative;
-              .menuHarasNav {
-                display: block;
-                position: absolute;
-                ul {
-                  display: block;
-                  width: 150px;
-                  text-align: left;
-                  background: $white1;
-                  list-style: none;
-
-                  li {
-                    list-style: none;
-                    padding: 10px;
-                    border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-                    font-size: 0.8rem;
-
-                    &:hover {
-                      color: $white1;
-                      background: $color2;
-                      transform: none;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
+        #menuHaras,
         #menuServices {
+          .menuHarasNav,
           .menuServicesNav {
             display: none;
           }
+
           &:hover {
             display: block;
             position: relative;
+
+            .menuHarasNav,
             .menuServicesNav {
               display: block;
               position: absolute;
               ul {
                 display: block;
-                width: 250px;
+                width: 150px;
                 text-align: left;
+                text-transform: none;
+                margin: 10px 0;
                 background: $white1;
+                list-style: none;
+
+                @media screen and (max-width: 770px) {
+                  width: 420px;
+                  text-align: center;
+                  color: $color2;
+                }
 
                 li {
                   list-style: none;
@@ -196,6 +155,26 @@ header {
                     transform: none;
                   }
                 }
+              }
+            }
+          }
+        }
+
+        #menuHaras {
+          &:hover {
+            .menuHarasNav {
+              ul {
+                width: 150px;
+              }
+            }
+          }
+        }
+
+        #menuServices {
+          &:hover {
+            .menuServicesNav {
+              ul {
+                width: 250px;
               }
             }
           }
