@@ -17,8 +17,8 @@ $font2: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 
 //colors
 
-$color1: #ea412c;
-$color2: #1a3c61;
+$color1: #1a3c61;
+$color2: #ea412c;
 $black1: #000;
 $white1: #fff;
 $text: #333;
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color2;
+  color: $color1;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;

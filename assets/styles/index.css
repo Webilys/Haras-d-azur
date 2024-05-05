@@ -52,26 +52,27 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (max-width: 770px) {
-  header nav {
-    position: relative;
-  }
+  text-align: center;
 }
 header nav a {
   width: 20%;
   margin: 0 auto;
 }
+@media screen and (max-width: 770px) {
+  header nav a {
+    width: 100%;
+  }
+}
 header nav a img {
   width: 100%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 @media screen and (max-width: 770px) {
   header nav a img {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -81,15 +82,12 @@ header nav a img:hover {
 }
 header nav .menu-icons {
   display: none;
-  text-align: right;
   color: #1a3c61;
 }
 @media screen and (max-width: 770px) {
   header nav .menu-icons {
     display: block;
-    position: absolute;
-    top: 85px;
-    right: 0px;
+    margin-bottom: 30px;
   }
 }
 header nav .menu-icons i {
@@ -155,10 +153,9 @@ header nav .menuNav .NavListLi .liNav a {
   color: #1a3c61;
   width: 100%;
   height: 100%;
-}
-header nav .menuNav .NavListLi .liNav:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  font-size: 1.2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 @media screen and (max-width: 770px) {
   header nav .menuNav .NavListLi .liNav:hover {
@@ -190,16 +187,16 @@ header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav {
   display: block;
   position: absolute;
+  padding-top: 10px;
+  width: 250px;
 }
 header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul,
 header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul,
 header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
   display: block;
-  width: 150px;
   text-align: left;
   text-transform: none;
-  margin: 10px 0;
   background: #fff;
   list-style: none;
 }
@@ -218,28 +215,39 @@ header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li,
 header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li,
 header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li {
   list-style: none;
-  padding: 10px;
   border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-  font-size: 0.8rem;
+  width: 100%;
+  height: 100%;
 }
-header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:hover,
-header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li:hover,
-header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li:hover,
-header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li:hover {
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li:first-of-type,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li:first-of-type,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li:first-of-type,
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li:first-of-type {
+  border-top: 2px solid #1a3c61;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li a,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li a,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li a,
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul li a:hover,
+header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul li a:hover,
+header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul li a:hover,
+header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul li a:hover {
   color: #fff;
   background: #1a3c61;
-  -webkit-transform: none;
-          transform: none;
-}
-header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul {
-  width: 150px;
-}
-header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
-  width: 250px;
 }
 
+footer {
+  background: #1a3c61;
+}
 footer .footer-container {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 40% 10%;
@@ -248,27 +256,37 @@ footer .footer-container {
           align-items: center;
   padding: 20px 0;
 }
-footer .footer-container p {
+@media screen and (max-width: 1075px) {
+  footer .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    text-align: center;
+  }
+}
+footer .footer-container div p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+footer .footer-container div p i {
+  color: #ea412c;
+}
+footer .footer-container div a {
+  color: #fff;
   font-size: 0.8rem;
 }
-footer .footer-container p a {
-  color: #1a3c61;
-  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 0.8rem;
-}
-footer .footer-container p a:hover {
+footer .footer-container div a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-footer .footer-container i {
+footer .footer-container div i {
   padding: 5px;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: #1a3c61;
+  color: #fff;
   font-size: 1rem;
 }
-footer .footer-container i:hover {
+footer .footer-container div i:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

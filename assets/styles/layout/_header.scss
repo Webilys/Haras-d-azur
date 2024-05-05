@@ -7,22 +7,23 @@ header {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-
-    @media screen and (max-width: 770px) {
-      // grid-template-columns: 1fr;
-      position: relative;
-    }
+    text-align: center;
 
     a {
       width: 20%;
       margin: 0 auto;
+
+      @media screen and (max-width: 770px) {
+        width: 100%;
+      }
+
       img {
         width: 100%;
-        transition: 0.2s;
         filter: drop-shadow(1px 1px 1px $blackShadow);
+        transition: 0.2s;
 
         @media screen and (max-width: 770px) {
-          width: 40%;
+          width: 60%;
           margin: 0 auto;
         }
 
@@ -34,14 +35,11 @@ header {
 
     .menu-icons {
       display: none;
-      text-align: right;
-      color: $color2;
+      color: $color1;
 
       @media screen and (max-width: 770px) {
         display: block;
-        position: absolute;
-        top: 85px;
-        right: 0px;
+        margin-bottom: 30px;
       }
 
       i {
@@ -85,6 +83,7 @@ header {
           transition: 0.2s;
           cursor: pointer;
           text-transform: uppercase;
+
           @media screen and (max-width: 770px) {
             padding: 10px 0;
             border-bottom: 1px solid $grey1;
@@ -92,18 +91,18 @@ header {
           }
 
           a {
-            color: $color2;
+            color: $color1;
             width: 100%;
             height: 100%;
+            font-size: 1.2rem;
+            transition: 0.2s;
           }
 
           &:hover {
-            transform: scale(1.2);
-
             @media screen and (max-width: 770px) {
               transform: none;
               box-shadow: none;
-              background: $color2;
+              background: $color1;
               color: $white1;
 
               a {
@@ -128,53 +127,42 @@ header {
             .menuServicesNav {
               display: block;
               position: absolute;
+              padding-top: 10px;
+              width: 250px;
+
               ul {
                 display: block;
-                width: 150px;
                 text-align: left;
                 text-transform: none;
-                margin: 10px 0;
                 background: $white1;
                 list-style: none;
 
                 @media screen and (max-width: 770px) {
                   width: 420px;
                   text-align: center;
-                  color: $color2;
+                  color: $color1;
                 }
 
                 li {
                   list-style: none;
-                  padding: 10px;
                   border-bottom: 1px solid rgba(241, 241, 241, 0.8);
-                  font-size: 0.8rem;
+                  width: 100%;
+                  height: 100%;
 
-                  &:hover {
-                    color: $white1;
-                    background: $color2;
-                    transform: none;
+                  &:first-of-type {
+                    border-top: 2px solid $color1;
+                  }
+                  a {
+                    display: flex;
+                    padding: 10px;
+                    font-size: 0.9rem;
+
+                    &:hover {
+                      color: $white1;
+                      background: $color1;
+                    }
                   }
                 }
-              }
-            }
-          }
-        }
-
-        #menuHaras {
-          &:hover {
-            .menuHarasNav {
-              ul {
-                width: 150px;
-              }
-            }
-          }
-        }
-
-        #menuServices {
-          &:hover {
-            .menuServicesNav {
-              ul {
-                width: 250px;
               }
             }
           }

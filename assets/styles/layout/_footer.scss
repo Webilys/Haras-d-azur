@@ -1,34 +1,48 @@
 footer {
+  background: $color1;
   .footer-container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 50% 40% 10%;
     align-items: center;
     padding: 20px 0;
 
-    p {
-      font-size: 0.8rem;
+    @media screen and (max-width: 1075px) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+      text-align: center;
+    }
+
+    div {
+      p {
+        font-size: 0.8rem;
+        color: $white1;
+
+        i {
+          color: $color2;
+        }
+      }
+
       a {
-        color: $color2;
-        font-family: $font2;
+        color: $white1;
         font-size: 0.8rem;
 
         &:hover {
           transform: scale(1.2);
         }
       }
-    }
 
-    i {
-      padding: 5px;
-      cursor: pointer;
-      transition: 0.2s;
-      color: $color2;
-      font-size: 1rem;
+      i {
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        color: $white1;
+        font-size: 1rem;
 
-      &:hover {
-        transform: scale(1.2);
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
