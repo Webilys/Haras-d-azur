@@ -158,6 +158,11 @@ header nav .menuNav .NavListLi .liNav a {
   transition: 0.2s;
 }
 @media screen and (max-width: 770px) {
+  header nav .menuNav .NavListLi .liNav a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 770px) {
   header nav .menuNav .NavListLi .liNav:hover {
     -webkit-transform: none;
             transform: none;
@@ -291,7 +296,7 @@ footer .footer-container div i:hover {
           transform: scale(1.2);
 }
 
-.accueil {
+#accueil {
   height: 80vh;
   background: url(../img/sujet.png) no-repeat left/contain;
 }/*# sourceMappingURL=index.css.map */
