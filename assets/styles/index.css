@@ -26,9 +26,32 @@ h4,
 h5,
 h6 {
   color: #1a3c61;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 a,
@@ -36,11 +59,33 @@ a:visited {
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .button2 {
-  padding: 10px 20px;
+  background: none;
+  border: none;
+  margin: 50px auto 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .button2 a {
+  padding: 10px 20px;
+  background: none;
+  border: 1px solid #fff;
   color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.button2 a:hover {
+  background: #fff;
+  color: #1a3c61;
+}
+.button2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 header nav {
@@ -171,11 +216,6 @@ header nav .menuNav .NavListLi .liNav a {
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #1a3c61;
-    color: #fff;
-  }
-  header nav .menuNav .NavListLi .liNav:hover a {
-    color: #fff;
   }
 }
 header nav .menuNav .NavListLi #menuHaras .menuHarasNav,
@@ -213,7 +253,7 @@ header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
   header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul,
   header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul,
   header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
-    width: 420px;
+    width: 83vw;
     text-align: center;
     color: #1a3c61;
   }
@@ -300,18 +340,34 @@ footer .footer-container div i:hover {
 }
 
 #accueil .hero {
-  height: 80vh;
+  height: 100vh;
   background: #1a3c61;
   display: grid;
   grid-template-columns: 30% 70%;
 }
 #accueil .hero .cheval {
+  margin-top: 20px;
   background: url(../img/sujet.png) no-repeat left/contain;
 }
 #accueil .hero .hero-text {
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#accueil .hero .hero-text h1,
-#accueil .hero .hero-text p {
+#accueil .hero .hero-text div {
+  padding: 50px;
+  text-align: center;
+}
+#accueil .hero .hero-text div h1,
+#accueil .hero .hero-text div p {
   color: #fff;
+}
+#accueil .hero .hero-text div h1 {
+  padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */

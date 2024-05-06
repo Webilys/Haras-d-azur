@@ -106,12 +106,6 @@ header {
             @media screen and (max-width: 770px) {
               transform: none;
               box-shadow: none;
-              background: $color1;
-              color: $white1;
-
-              a {
-                color: $white1;
-              }
             }
           }
         }
@@ -142,7 +136,7 @@ header {
                 list-style: none;
 
                 @media screen and (max-width: 770px) {
-                  width: 420px;
+                  width: 83vw;
                   text-align: center;
                   color: $color1;
                 }
