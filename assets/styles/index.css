@@ -11,10 +11,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   font-family: garet-book, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
 }
@@ -38,6 +34,13 @@ h6 {
 a,
 a:visited {
   text-decoration: none;
+}
+
+.button2 {
+  padding: 10px 20px;
+}
+.button2 a {
+  color: #fff;
 }
 
 header nav {
@@ -296,7 +299,19 @@ footer .footer-container div i:hover {
           transform: scale(1.2);
 }
 
-#accueil {
+#accueil .hero {
   height: 80vh;
+  background: #1a3c61;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+#accueil .hero .cheval {
   background: url(../img/sujet.png) no-repeat left/contain;
+}
+#accueil .hero .hero-text {
+  padding: 50px;
+}
+#accueil .hero .hero-text h1,
+#accueil .hero .hero-text p {
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,21 @@
 #accueil {
-  height: 80vh;
-  background: url(../img/sujet.png) no-repeat left/contain;
+  .hero {
+    height: 80vh;
+    background: $color1;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    .cheval {
+      background: url(../img/sujet.png) no-repeat left/contain;
+    }
+
+    .hero-text {
+      padding: 50px;
+
+      h1,
+      p {
+        color: $white1;
+      }
+    }
+  }
 }
