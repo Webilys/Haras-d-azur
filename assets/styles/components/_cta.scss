@@ -1,0 +1,16 @@
+.cta {
+  background: url(../img/cta.jpeg) no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    padding: 100px 0;
+
+    h2,
+    p,
+    a {
+      text-shadow: 0 0 10px $white1;
+    }
+  }
+}

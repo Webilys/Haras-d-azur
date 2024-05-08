@@ -1,3 +1,26 @@
+.button1 {
+  background: none;
+  border: none;
+  margin: 50px auto 30px;
+  transition: 0.2s;
+
+  a {
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid $color1;
+    color: $color1;
+    transition: 0.2s;
+
+    &:hover {
+      background: $color1;
+      color: $white1;
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 .button2 {
   background: none;
   border: none;
