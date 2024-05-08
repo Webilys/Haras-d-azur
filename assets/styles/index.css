@@ -138,6 +138,9 @@ a:visited {
 .cta .container a {
   text-shadow: 0 0 10px #fff;
 }
+.cta .container a:hover {
+  text-shadow: none;
+}
 
 header nav {
   width: 85%;
