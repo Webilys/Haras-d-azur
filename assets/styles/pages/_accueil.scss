@@ -17,7 +17,6 @@
 
       div {
         padding: 50px;
-        text-align: center;
 
         h1,
         p {
@@ -25,7 +24,139 @@
         }
 
         h1 {
+          text-transform: none;
           padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .prestations {
+    .prestationsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+      a {
+        border: 4px double $color1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        color: $text;
+        box-shadow: 0 0 5px $blackShadow;
+        transition: 0.2s;
+
+        &:hover {
+          box-shadow: 0 0 10px $blackShadow;
+          transform: scale(1.05);
+        }
+
+        div {
+          h3 {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $color1;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .actus {
+    background: url(../img/actus.jpeg) no-repeat center/cover;
+
+    .actusContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+      a {
+        background: $white1;
+        box-shadow: 0 0 5px $blackShadow;
+        transition: 0.2s;
+
+        &:hover {
+          box-shadow: 0 0 10px $blackShadow;
+          transform: translateY(-10px);
+        }
+
+        div {
+          padding: 30px;
+          img {
+            width: 100%;
+          }
+
+          h3 {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $color1;
+          }
+
+          p {
+            color: $text;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    .container {
+      #google-reviews {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        gap: 20px;
+
+        i {
+          color: goldenrod;
+          font-size: 1.3rem;
+          padding: 10px 0 15px;
+        }
+
+        #notation {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          #excellent {
+            font-size: 1.5rem;
+          }
+
+          i {
+            font-size: 1.3rem;
+          }
+          #numbersReviews {
+            font-size: 0.9rem;
+          }
+
+          img {
+            width: 40%;
+            margin: 10px auto;
+          }
+        }
+
+        .testimonialContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          border: 4px double $color1;
+          .rating {
+            i {
+              font-size: 1rem;
+            }
+          }
+
+          .testimonialText {
+            font-size: 0.9rem;
+            padding: 10px 0 20px;
+          }
+
+          .name {
+            font-size: 0.9rem;
+            color: $color1;
+          }
         }
       }
     }

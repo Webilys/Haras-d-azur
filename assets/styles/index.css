@@ -17,6 +17,7 @@
 
 body {
   color: #333;
+  text-align: center;
 }
 
 h1,
@@ -25,6 +26,7 @@ h3,
 h4,
 h5,
 h6 {
+  text-transform: uppercase;
   color: #1a3c61;
   letter-spacing: 1px;
   font-weight: normal;
@@ -35,11 +37,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 h4 {
@@ -62,6 +64,10 @@ a:visited {
 .container {
   width: 80%;
   margin: 0 auto;
+  padding: 50px 0;
+}
+.container h2 {
+  padding-bottom: 50px;
 }
 
 .button2 {
@@ -362,12 +368,139 @@ footer .footer-container div i:hover {
 }
 #accueil .hero .hero-text div {
   padding: 50px;
-  text-align: center;
 }
 #accueil .hero .hero-text div h1,
 #accueil .hero .hero-text div p {
   color: #fff;
 }
 #accueil .hero .hero-text div h1 {
+  text-transform: none;
   padding-bottom: 30px;
+}
+#accueil .prestations .prestationsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#accueil .prestations .prestationsContainer a {
+  border: 4px double #1a3c61;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #333;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#accueil .prestations .prestationsContainer a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#accueil .prestations .prestationsContainer a div h3 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1a3c61;
+  margin-bottom: 20px;
+}
+#accueil .actus {
+  background: url(../img/actus.jpeg) no-repeat center/cover;
+}
+#accueil .actus .actusContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#accueil .actus .actusContainer a {
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#accueil .actus .actusContainer a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+#accueil .actus .actusContainer a div {
+  padding: 30px;
+}
+#accueil .actus .actusContainer a div img {
+  width: 100%;
+}
+#accueil .actus .actusContainer a div h3 {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1a3c61;
+}
+#accueil .actus .actusContainer a div p {
+  color: #333;
+}
+#accueil .testimonial .container #google-reviews {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+#accueil .testimonial .container #google-reviews i {
+  color: goldenrod;
+  font-size: 1.3rem;
+  padding: 10px 0 15px;
+}
+#accueil .testimonial .container #google-reviews #notation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#accueil .testimonial .container #google-reviews #notation #excellent {
+  font-size: 1.5rem;
+}
+#accueil .testimonial .container #google-reviews #notation i {
+  font-size: 1.3rem;
+}
+#accueil .testimonial .container #google-reviews #notation #numbersReviews {
+  font-size: 0.9rem;
+}
+#accueil .testimonial .container #google-reviews #notation img {
+  width: 40%;
+  margin: 10px auto;
+}
+#accueil .testimonial .container #google-reviews .testimonialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border: 4px double #1a3c61;
+}
+#accueil .testimonial .container #google-reviews .testimonialContainer .rating i {
+  font-size: 1rem;
+}
+#accueil .testimonial .container #google-reviews .testimonialContainer .testimonialText {
+  font-size: 0.9rem;
+  padding: 10px 0 20px;
+}
+#accueil .testimonial .container #google-reviews .testimonialContainer .name {
+  font-size: 0.9rem;
+  color: #1a3c61;
 }/*# sourceMappingURL=index.css.map */
