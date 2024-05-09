@@ -737,4 +737,12 @@ footer .footer-container div i:hover {
           box-shadow: 0 0 5px #000;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+#chevaux-vente .chevauxVenteContainer {
+  margin-top: 50px;
+  border: 4px double #1a3c61;
+}
+#chevaux-vente .chevauxVenteContainer h2 {
+  padding: 20px;
 }/*# sourceMappingURL=index.css.map */
