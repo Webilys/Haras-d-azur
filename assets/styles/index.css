@@ -70,6 +70,15 @@ a:visited {
   padding-bottom: 50px;
 }
 
+.title-page {
+  background: #1a3c61;
+  text-align: center;
+  padding: 40px;
+}
+.title-page h1 {
+  color: #fff;
+}
+
 .button1 {
   background: none;
   border: none;
@@ -589,4 +598,143 @@ footer .footer-container div i:hover {
 #accueil .testimonial .container #google-reviews .testimonialContainer .name {
   font-size: 0.9rem;
   color: #1a3c61;
+}
+
+#notre-haras .harasContainer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 780px) {
+  #notre-haras .harasContainer .container {
+    grid-template-columns: 1fr;
+  }
+}
+#notre-haras .harasContainer .container a {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#notre-haras .harasContainer .container a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#notre-haras .harasContainer .container a img {
+  width: 100%;
+  height: 250px;
+}
+@media screen and (max-width: 780px) {
+  #notre-haras .harasContainer .container a img {
+    height: 300px;
+  }
+}
+#notre-haras .harasContainer .container a h2 {
+  padding: 20px 0 25px;
+  font-size: 1.2rem;
+}
+
+#installations .installationsContainer .container .image {
+  padding-bottom: 30px;
+}
+#installations .installationsContainer .container .image img {
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+#installations .installationsContainer .container .installationsText .intro {
+  padding-bottom: 30px;
+}
+#installations .installationsContainer .container .installationsDescription {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1100px) {
+  #installations .installationsContainer .container .installationsDescription {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 780px) {
+  #installations .installationsContainer .container .installationsDescription {
+    grid-template-columns: 1fr;
+  }
+}
+#installations .installationsContainer .container .installationsDescription div {
+  border: 4px double #1a3c61;
+  padding: 20px;
+}
+#installations .installationsContainer .container .installationsDescription div h2 {
+  padding-bottom: 30px;
+}
+#installations .installationsContainer .container .installationsDescription div ul {
+  text-align: justify;
+}
+#installations .installationsContainer .container .installationsDescription div ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+#equipe .cardEquipe {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#equipe .cardEquipe .card {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+#equipe .cardEquipe .card:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#equipe .cardEquipe .card .imageEquipe {
+  background: #1a3c61;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+}
+#equipe .cardEquipe .card .imageEquipe .imageContainer {
+  border-radius: 360px;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#equipe .cardEquipe .card .imageEquipe .imageContainer img {
+  border-radius: 360px;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#equipe .cardEquipe .card h2 {
+  padding: 30px 20px 30px 20px;
+  font-size: 1.2rem;
+}
+#equipe .cardEquipe .card h3 {
+  padding: 0px 20px 30px 20px;
+  text-transform: none;
+}
+#equipe .cardEquipe .card p {
+  padding: 0px 20px 30px 20px;
+}
+
+#galerie .galerieContainer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+#galerie .galerieContainer .container img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#galerie .galerieContainer .container img:hover {
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }/*# sourceMappingURL=index.css.map */
