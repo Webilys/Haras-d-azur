@@ -13,19 +13,14 @@ header {
       width: 20%;
       margin: 0 auto;
 
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 950px) {
         width: 100%;
       }
 
       img {
-        width: 100%;
+        width: 250px;
         filter: drop-shadow(1px 1px 1px $blackShadow);
         transition: 0.2s;
-
-        @media screen and (max-width: 770px) {
-          width: 60%;
-          margin: 0 auto;
-        }
 
         &:hover {
           transform: scale(1.2);
@@ -37,7 +32,7 @@ header {
       display: none;
       color: $color1;
 
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 950px) {
         display: block;
         margin-bottom: 30px;
       }
@@ -49,7 +44,7 @@ header {
       #open-icon {
         display: none;
 
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 950px) {
           display: block;
         }
       }
@@ -69,7 +64,7 @@ header {
         align-items: center;
         width: 100%;
 
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 950px) {
           display: none;
           display: flex;
           flex-direction: column;
@@ -84,7 +79,7 @@ header {
           cursor: pointer;
           text-transform: uppercase;
 
-          @media screen and (max-width: 770px) {
+          @media screen and (max-width: 950px) {
             padding: 10px 0;
             border-bottom: 1px solid $grey1;
             border-radius: 0;
@@ -97,13 +92,13 @@ header {
             font-size: 1.1rem;
             transition: 0.2s;
 
-            @media screen and (max-width: 770px) {
+            @media screen and (max-width: 950px) {
               font-size: 1rem;
             }
           }
 
           &:hover {
-            @media screen and (max-width: 770px) {
+            @media screen and (max-width: 950px) {
               transform: none;
               box-shadow: none;
             }
@@ -135,7 +130,7 @@ header {
                 background: $white1;
                 list-style: none;
 
-                @media screen and (max-width: 770px) {
+                @media screen and (max-width: 950px) {
                   width: 83vw;
                   text-align: center;
                   color: $color1;

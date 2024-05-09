@@ -160,23 +160,17 @@ header nav a {
   width: 20%;
   margin: 0 auto;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav a {
     width: 100%;
   }
 }
 header nav a img {
-  width: 100%;
+  width: 250px;
   -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-@media screen and (max-width: 770px) {
-  header nav a img {
-    width: 60%;
-    margin: 0 auto;
-  }
 }
 header nav a img:hover {
   -webkit-transform: scale(1.2);
@@ -186,7 +180,7 @@ header nav .menu-icons {
   display: none;
   color: #1a3c61;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menu-icons {
     display: block;
     margin-bottom: 30px;
@@ -198,7 +192,7 @@ header nav .menu-icons i {
 header nav .menu-icons #open-icon {
   display: none;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menu-icons #open-icon {
     display: block;
   }
@@ -220,7 +214,7 @@ header nav .menuNav .NavListLi {
           align-items: center;
   width: 100%;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menuNav .NavListLi {
     display: none;
     display: -webkit-box;
@@ -244,7 +238,7 @@ header nav .menuNav .NavListLi .liNav {
   cursor: pointer;
   text-transform: uppercase;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menuNav .NavListLi .liNav {
     padding: 10px 0;
     border-bottom: 1px solid #f1f1f1;
@@ -259,12 +253,12 @@ header nav .menuNav .NavListLi .liNav a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menuNav .NavListLi .liNav a {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menuNav .NavListLi .liNav:hover {
     -webkit-transform: none;
             transform: none;
@@ -302,7 +296,7 @@ header nav .menuNav .NavListLi #menuServices:hover .menuServicesNav ul {
   background: #fff;
   list-style: none;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   header nav .menuNav .NavListLi #menuHaras:hover .menuHarasNav ul,
   header nav .menuNav .NavListLi #menuHaras:hover .menuServicesNav ul,
   header nav .menuNav .NavListLi #menuServices:hover .menuHarasNav ul,
@@ -399,9 +393,22 @@ footer .footer-container div i:hover {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 880px) {
+  #accueil .hero {
+    height: auto;
+    grid-template-columns: 1fr;
+    background: url(../img/sujet.png) no-repeat left/contain;
+    background-color: #1a3c61;
+  }
+}
 #accueil .hero .cheval {
   margin-top: 20px;
   background: url(../img/sujet.png) no-repeat left/contain;
+}
+@media screen and (max-width: 880px) {
+  #accueil .hero .cheval {
+    display: none;
+  }
 }
 #accueil .hero .hero-text {
   display: -webkit-box;
@@ -413,6 +420,11 @@ footer .footer-container div i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 880px) {
+  #accueil .hero .hero-text {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  }
 }
 #accueil .hero .hero-text div {
   padding: 50px;
@@ -429,6 +441,16 @@ footer .footer-container div i:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+@media screen and (max-width: 1100px) {
+  #accueil .prestations .prestationsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 780px) {
+  #accueil .prestations .prestationsContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #accueil .prestations .prestationsContainer a {
   border: 4px double #1a3c61;
@@ -467,9 +489,9 @@ footer .footer-container div i:hover {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 850px) {
   #accueil .actus .actusContainer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 #accueil .actus .actusContainer a {
@@ -503,6 +525,16 @@ footer .footer-container div i:hover {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
   gap: 20px;
+}
+@media screen and (max-width: 950px) {
+  #accueil .testimonial .container #google-reviews {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  #accueil .testimonial .container #google-reviews {
+    grid-template-columns: 1fr;
+  }
 }
 #accueil .testimonial .container #google-reviews i {
   color: goldenrod;
