@@ -1,0 +1,25 @@
+.article {
+  .articleContainer {
+    .container {
+      article {
+        img {
+          width: 50%;
+          box-shadow: 0 0 5px $black1;
+          margin-bottom: 50px;
+        }
+
+        p {
+          text-align: justify;
+        }
+
+        a {
+          color: $color1;
+        }
+
+        .signature {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
