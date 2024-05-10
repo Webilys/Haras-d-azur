@@ -43,3 +43,18 @@
     transform: scale(1.05);
   }
 }
+
+.buttonSubmit {
+  border: 1px solid $color1;
+  margin: 20px auto 30px;
+  transition: 0.2s;
+  padding: 10px 20px;
+  background: $color1;
+  color: $white1;
+
+  &:hover {
+    background: none;
+    color: $color1;
+    transform: scale(1.05);
+  }
+}
