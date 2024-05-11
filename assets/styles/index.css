@@ -812,6 +812,16 @@ footer .footer-container div i:hover {
 .prestationPage .services .container {
   padding: 0 0 50px;
 }
+.prestationPage .services .container a {
+  color: #1a3c61;
+}
+.prestationPage .services .container button a:hover {
+  color: #fff;
+}
+.prestationPage .services .container .descriptionCheval .strong {
+  font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #1a3c61;
+}
 .prestationPage .services .container .servicesContainer2columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -820,6 +830,14 @@ footer .footer-container div i:hover {
 .prestationPage .services .container .servicesContainer2columns div {
   border: 4px double #1a3c61;
   padding: 30px;
+}
+.prestationPage .services .container .servicesContainer2columns div img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 30px;
+  border-radius: 360px;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
 }
 .prestationPage .services .container .servicesContainer2columns div h3 {
   padding-bottom: 20px;
