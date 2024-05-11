@@ -884,7 +884,8 @@ footer .footer-container div i:hover {
   -webkit-box-shadow: 0 0 5px #000;
           box-shadow: 0 0 5px #000;
 }
-.partenairesContainer .strong {
+
+.strong {
   font-family: garet-heavy, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #1a3c61;
 }
