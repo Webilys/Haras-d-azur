@@ -3,6 +3,7 @@
     img {
       margin-bottom: 50px;
       box-shadow: 0 0 5px $black1;
+      width: 80%;
     }
   }
 
@@ -24,6 +25,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+
+        @media screen and (max-width: 850px) {
+          grid-template-columns: 1fr;
+        }
 
         div {
           border: 4px double $color1;
@@ -47,6 +52,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+
+        @media screen and (max-width: 850px) {
+          grid-template-columns: 1fr;
+        }
 
         div {
           border: 4px double $color1;

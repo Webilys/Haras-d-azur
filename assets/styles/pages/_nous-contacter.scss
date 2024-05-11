@@ -6,6 +6,10 @@
       grid-template-columns: 30% 70%;
       gap: 20px;
 
+      @media screen and (max-width: 850px) {
+        grid-template-columns: 1fr;
+      }
+
       h2 {
         padding-bottom: 20px;
         margin-bottom: 20px;

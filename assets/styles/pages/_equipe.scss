@@ -5,6 +5,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr;
+    }
+
     .card {
       box-shadow: 0 0 10px $blackShadow;
       border-radius: 20px;
