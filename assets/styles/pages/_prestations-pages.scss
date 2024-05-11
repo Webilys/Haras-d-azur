@@ -19,12 +19,6 @@
           color: $white1;
         }
       }
-      .descriptionCheval {
-        .strong {
-          font-family: $font2;
-          color: $color1;
-        }
-      }
 
       .servicesContainer2columns {
         display: grid;
@@ -109,5 +103,10 @@
     margin-bottom: 50px;
     width: 300px;
     box-shadow: 0 0 5px $black1;
+  }
+
+  .strong {
+    font-family: $font2;
+    color: $color1;
   }
 }
